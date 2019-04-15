@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel=stylesheet href="schuifMenu.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mick Bosman">
+    <title>Mick Bosman</title>
+  </head>
+
+  <style>
+
+  #toggleMenu:checked ~ main {
+    margin-left: 10em;
+  }
+
+  #toggleLabel::before {
+    content: "\2630";
+    cursor: pointer;
+  }
+
+  #toggleMenu:checked ~ main #toggleLabel::before {
+    content: "\2716";
+  }
+
+    nav {
+      position: fixed;
+    }
+
+    main {
+      position: absolute;
+      margin-left: 0;
+      transition: margin-left .6s cubic-bezier(.17,.67,.83,1.36);
+    }
+
+  </style>
+
+  <body>
+
+    <input type="checkbox" id="toggleMenu">
+    <nav>
+      <h1>Menu</h1>
+      <ul>
+        <li><a href="inhoudSchuift.html" class="actief">Inhoud schuift</a></li>
+        <li><a href="menuSchuift.html">Menu schuift</a></li>
+        <li><a href="allesSchuift.html">Alles schuift</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <label for="toggleMenu" id="toggleLabel"></label>
+      <h1>Lieveheerstbeestje</h1> <br>
+      <img src="afbeeldingen/foto.jpg">
+      <h3>Lieveheersbeestjes hebben een ronde, vaak halfbolvormige vorm met
+        korte pootjes die net als de kleine antennes onder het dek- en
+        nekschild kunnen worden teruggetrokken.<br> Ze hebben vaak rode, gele,
+        witte, zwarte en oranje kleuren en zijn vaak gestippeld.
+        In België en Nederland komt een zestigtal soorten voor met een
+        grootte van 2 tot 10 millimeter. <br>De kevers en de larven zijn vaak
+        roofdieren van onder andere bladluizen (die vaak worden beschermd
+        door mieren vanwege hun zoete afscheiding), maar er zijn ook<br>
+        lieveheersbeestjes met een plantaardig dieet.
+        De meeste lieveheersbeestjes leven ongeveer een jaar. Het
+        aantal stippen zegt dus niets over de leeftijd. <br> De kleur en de
+        vlekken op de dekschilden spelen wel een belangrijke rol bij het op
+        naam brengen van de verschillende soorten.</p> <br>
+
+          <h1> (Hier komt normaal meer inhoud van de site.)</h1> <br> <br>
+          <h1> bla bla bla</h1> <br><br><br>
+          <h1> bla bla bla </h1>
+
+          <div id="validatie">
+              <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+                  <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+              <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                  <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+              </a>
+          </div>
+    </main>
+
+  </body>
+</html>
